@@ -6,15 +6,20 @@ public class Principal {
         miPelicula.fechaDeLanzamiento = 2024;
         miPelicula.duracionEnMinutos = 120;
 
-        System.out.println("Mi pelicula es: " + miPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: " + miPelicula.fechaDeLanzamiento);
+        miPelicula.muestraFichaTecnica();
+        miPelicula.evalua(7.5);
+        miPelicula.evalua(9);
+        miPelicula.evalua(8.5);
+
+        System.out.println(miPelicula.sumaDeEvaluaciones);
+        System.out.println(miPelicula.totalDeEvaluaciones);
+        System.out.println(miPelicula.calculaMedia());
 
         Pelicula otraPelicula = new Pelicula();
         otraPelicula.nombre = "Shrek";
         otraPelicula.fechaDeLanzamiento = 2001;
-        miPelicula.duracionEnMinutos = 90;
+        otraPelicula.duracionEnMinutos = 90;
 
-        System.out.println("Mi pelicula es: " + otraPelicula.nombre);
-        System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
+        otraPelicula.muestraFichaTecnica();
     }
 }
