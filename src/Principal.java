@@ -1,4 +1,5 @@
 import com.curso.screenmatch.modelos.Pelicula;
+import com.curso.screenmatch.modelos.Serie;
 
 public class Principal {
 
@@ -16,8 +17,17 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
 
+        Serie dark = new Serie();
+        dark.setNombre("Dark");
+        dark.setFechaDeLanzamiento(2016);
+        dark.setTemporadas(3);
+        dark.setMinutosPorEpisodio(45);
+        dark.setEspisodiosPorTemporada(8);
+        dark.muestraFichaTecnica();
+        System.out.println(dark.getDuracionEnMinutos());
 
-        
+
+
 
 
 //        Pelicula otraPelicula = new Pelicula();
