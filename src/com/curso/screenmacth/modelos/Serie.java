@@ -1,4 +1,4 @@
-package com.curso.screenmatch.modelos;
+package com.curso.screenmacth.modelos;
 
 public class Serie extends Titulo{
     int temporadas;
@@ -34,5 +34,4 @@ public class Serie extends Titulo{
         this.minutosPorEpisodio = minutosPorEpisodio;
     }
 }
-
 

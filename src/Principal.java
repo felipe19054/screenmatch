@@ -1,5 +1,6 @@
-import com.curso.screenmatch.modelos.Pelicula;
-import com.curso.screenmatch.modelos.Serie;
+import com.curso.screenmacth.modelos.Pelicula;
+import com.curso.screenmacth.modelos.Serie;
+import com.curso.sreenmacth.calculos.CalculadorTiempo;
 
 public class Principal {
 
@@ -26,15 +27,23 @@ public class Principal {
         dark.muestraFichaTecnica();
         System.out.println(dark.getDuracionEnMinutos());
 
+        Pelicula otraPelicula = new Pelicula();
+        otraPelicula.setNombre("Shrek");
+        otraPelicula.setFechaDeLanzamiento(2001);
+        otraPelicula.setDuracionEnMinutos(90);
+
+        CalculadorTiempo calculadora = new CalculadorTiempo();
+        calculadora.incluye(miPelicula);
+        calculadora.incluye(dark);
+        calculadora.incluye(otraPelicula);
+        System.out.println(calculadora.getTiempoTotal());
 
 
 
 
-//        Pelicula otraPelicula = new Pelicula();
-//        otraPelicula.nombre = "Shrek";
-//        otraPelicula.fechaDeLanzamiento = 2001;
-//        otraPelicula.duracionEnMinutos = 90;
-//
-//        otraPelicula.muestraFichaTecnica();
+
+
+
+
     }
 }

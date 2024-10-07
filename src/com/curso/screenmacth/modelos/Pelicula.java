@@ -1,4 +1,4 @@
-package com.curso.screenmatch.modelos;
+package com.curso.screenmacth.modelos;
 
 public class Pelicula extends Titulo{
     private String director;
