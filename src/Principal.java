@@ -11,8 +11,7 @@ public class Principal {
         miPelicula.evalua(9);
         miPelicula.evalua(8.5);
 
-        System.out.println(miPelicula.sumaDeEvaluaciones);
-        System.out.println(miPelicula.totalDeEvaluaciones);
+        System.out.println(miPelicula.getTotalDeEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
 
         Pelicula otraPelicula = new Pelicula();
