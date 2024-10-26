@@ -1,6 +1,8 @@
+import com.curso.screenmacth.modelos.Episodio;
 import com.curso.screenmacth.modelos.Pelicula;
 import com.curso.screenmacth.modelos.Serie;
 import com.curso.sreenmacth.calculos.CalculadorTiempo;
+import com.curso.sreenmacth.calculos.FiltroRecomendacion;
 
 public class Principal {
 
@@ -38,9 +40,16 @@ public class Principal {
         calculadora.incluye(otraPelicula);
         System.out.println(calculadora.getTiempoTotal());
 
+        FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+        filtroRecomendacion.filtra(miPelicula);
 
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setNombre("Estraño");
+        episodio.setSerie(dark);
+        episodio.setTotalVisualizaciones(50);
 
-
+        filtroRecomendacion.filtra(episodio);
 
 
 
