@@ -9,8 +9,7 @@ import java.util.ArrayList;
 public class Principal {
 
     public static void main(String[] args) {
-        Pelicula miPelicula = new Pelicula("Deadpool 3");
-        miPelicula.setFechaDeLanzamiento(2024);
+        Pelicula miPelicula = new Pelicula("Deadpool 3", 2024);
         miPelicula.setDuracionEnMinutos(120);
 
         miPelicula.muestraFichaTecnica();
@@ -21,17 +20,14 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
 
-        Serie dark = new Serie();
-        dark.setNombre("Dark");
-        dark.setFechaDeLanzamiento(2016);
+        Serie dark = new Serie("Dark", 2016);
         dark.setTemporadas(3);
         dark.setMinutosPorEpisodio(45);
         dark.setEspisodiosPorTemporada(8);
         dark.muestraFichaTecnica();
         System.out.println(dark.getDuracionEnMinutos());
 
-        Pelicula otraPelicula = new Pelicula("Shrek");
-        otraPelicula.setFechaDeLanzamiento(2001);
+        Pelicula otraPelicula = new Pelicula("Shrek", 2001);
         otraPelicula.setDuracionEnMinutos(90);
 
         CalculadorTiempo calculadora = new CalculadorTiempo();
@@ -51,9 +47,8 @@ public class Principal {
 
 
 
-        var peliculaDeFel = new Pelicula("La cita perfecta");
+        var peliculaDeFel = new Pelicula("La cita perfecta", 2019);
         peliculaDeFel.setDuracionEnMinutos(90);
-        peliculaDeFel.setFechaDeLanzamiento(2019);
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
         listaDePeliculas.add(peliculaDeFel);
