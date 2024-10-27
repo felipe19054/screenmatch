@@ -4,6 +4,8 @@ import com.curso.screenmacth.modelos.Serie;
 import com.curso.sreenmacth.calculos.CalculadorTiempo;
 import com.curso.sreenmacth.calculos.FiltroRecomendacion;
 
+import java.util.ArrayList;
+
 public class Principal {
 
     public static void main(String[] args) {
@@ -49,10 +51,20 @@ public class Principal {
         episodio.setSerie(dark);
         episodio.setTotalVisualizaciones(50);
 
-        filtroRecomendacion.filtra(episodio);
 
 
+        var peliculaDeFel = new Pelicula();
+        peliculaDeFel.setNombre("La cita perfecta");
+        peliculaDeFel.setDuracionEnMinutos(90);
+        peliculaDeFel.setFechaDeLanzamiento(2019);
 
+        ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
+        listaDePeliculas.add(peliculaDeFel);
+        listaDePeliculas.add(miPelicula);
+        listaDePeliculas.add(otraPelicula);
 
+        System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
+        System.out.println("La primera pelicula es: " + listaDePeliculas.get(0).getNombre());
+        
     }
 }
