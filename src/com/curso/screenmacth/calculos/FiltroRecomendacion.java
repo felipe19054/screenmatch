@@ -1,4 +1,4 @@
-package com.curso.sreenmacth.calculos;
+package com.curso.screenmacth.calculos;
 
 public class FiltroRecomendacion {
 

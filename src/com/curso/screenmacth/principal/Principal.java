@@ -1,8 +1,10 @@
+package com.curso.screenmacth.principal;
+
 import com.curso.screenmacth.modelos.Episodio;
 import com.curso.screenmacth.modelos.Pelicula;
 import com.curso.screenmacth.modelos.Serie;
-import com.curso.sreenmacth.calculos.CalculadorTiempo;
-import com.curso.sreenmacth.calculos.FiltroRecomendacion;
+import com.curso.screenmacth.calculos.CalculadorTiempo;
+import com.curso.screenmacth.calculos.FiltroRecomendacion;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,6 @@
 package com.curso.screenmacth.modelos;
 
-import com.curso.sreenmacth.calculos.Clasificable;
+import com.curso.screenmacth.calculos.Clasificable;
 
 public class Pelicula extends Titulo implements Clasificable {
     private String director;

@@ -1,6 +1,4 @@
-package com.curso.sreenmacth.calculos;
-import com.curso.screenmacth.modelos.Pelicula;
-import com.curso.screenmacth.modelos.Serie;
+package com.curso.screenmacth.calculos;
 import com.curso.screenmacth.modelos.Titulo;
 
 public class CalculadorTiempo {
