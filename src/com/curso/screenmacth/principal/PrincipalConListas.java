@@ -6,6 +6,7 @@ import com.curso.screenmacth.modelos.Titulo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalConListas {
     public static void main(String[] args) {
@@ -43,5 +44,9 @@ public class PrincipalConListas {
 
         Collections.sort(lista);
         System.out.println("Lista de titulos ordenados " + lista);
+
+        lista.sort(Comparator.comparing(Titulo::getFechaDeLanzamiento));
+
+
     }
 }
