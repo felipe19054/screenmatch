@@ -5,6 +5,7 @@ import com.curso.screenmacth.modelos.Serie;
 import com.curso.screenmacth.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalConListas {
     public static void main(String[] args) {
@@ -26,11 +27,21 @@ public class PrincipalConListas {
 
 
         for (Titulo item: lista){
-            System.out.println(item);
-            Pelicula pelicula = (Pelicula) item;
-            System.out.println(pelicula.getClasificable());
-
+            System.out.println(item.getNombre());
+            if(item instanceof Pelicula pelicula && pelicula.getClasificable() > 2){
+                System.out.println("Calificación: " + pelicula.getClasificable());
+            }
         }
 
+        ArrayList<String> listaDeArtistas = new ArrayList<>();
+        listaDeArtistas.add("Penélope Cruz");
+        listaDeArtistas.add("Antonio benedeto");
+        listaDeArtistas.add("Ricardo Darín");
+
+        Collections.sort(listaDeArtistas);
+        System.out.println("Lista de artistas ordenada " + listaDeArtistas);
+
+        Collections.sort(lista);
+        System.out.println("Lista de titulos ordenados " + lista);
     }
 }
